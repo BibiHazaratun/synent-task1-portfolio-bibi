@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bibi Hazaratun Nesa — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <span class="nav-mark">BHN</span>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero-text">
+      <p class="eyebrow">Portfolio</p>
+      <h1>Bibi Hazaratun Nesa</h1>
+      <p class="role">CSE Student &amp; NLP Researcher</p>
+      <p class="hero-desc">
+        I build language models that read emotion out of Bangla, Banglish,
+        and mixed-script text — and full-stack products that put research to work.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Get in touch</a>
+        <a href="#about" class="btn btn-ghost">Learn more</a>
+      </div>
+    </div>
+
+    <div class="hero-signal" aria-hidden="true">
+      <div class="signal-card">
+        <p class="signal-label">// sample input</p>
+        <p class="signal-text" id="signalText">আজকে মনটা অনেক ভালো লাগছে</p>
+        <div class="signal-tag" id="signalTag">
+          <span class="tag-dot"></span>
+          <span id="signalEmotion">Joy</span>
+        </div>
+      </div>
+      <div class="signal-bars" id="signalBars"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="section-head">
+      <span class="section-num">About</span>
+      <h2>What I work on</h2>
+    </div>
+    <div class="about-grid">
+      <p class="about-lead">
+        I'm a final-year Computer Science &amp; Engineering student at Premier University,
+        Chittagong. My thesis work sits at the intersection of NLP and low-resource
+        languages — training transformer ensembles to recognize emotion across Bangla,
+        Banglish (Romanized Bangla), and naturally code-mixed text, where most existing
+        models fall apart.
+      </p>
+      <div class="about-detail">
+        <p>
+          Alongside research, I build full-stack web applications — from student
+          platforms to event tools — using the MERN stack. I like projects where
+          the model and the interface both have to work, not just one of them.
+        </p>
+        <p>
+          Currently exploring graduate research opportunities abroad, while
+          finishing up my thesis and a related conference submission.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills" id="skills">
+    <div class="section-head">
+      <span class="section-num">Skills</span>
+      <h2>What I use</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>NLP &amp; ML</h3>
+        <ul>
+          <li>BanglaBERT / MuRIL / XLM-RoBERTa</li>
+          <li>Transformer ensemble methods</li>
+          <li>Cross-domain robustness testing</li>
+          <li>LIME &amp; SHAP explainability</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>Web Development</h3>
+        <ul>
+          <li>React &amp; Node.js / Express</li>
+          <li>MongoDB Atlas</li>
+          <li>REST API design</li>
+          <li>Responsive HTML &amp; CSS</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>Tools &amp; Practice</h3>
+        <ul>
+          <li>Git &amp; GitHub</li>
+          <li>Google Colab / Kaggle</li>
+          <li>Overleaf (LaTeX)</li>
+          <li>VS Code</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="section-head">
+      <span class="section-num">Contact</span>
+      <h2>Let's talk</h2>
+    </div>
+    <p class="contact-lead">Open to research collaborations, internships, and web projects.</p>
+    <div class="contact-list">
+      <a href="https://github.com/BibiHazaratun" target="_blank" rel="noopener">
+        <span class="contact-label">GitHub</span>
+        <span class="contact-value">github.com/BibiHazaratun</span>
+      </a>
+      <a href="mailto:bibi.hazaratun@example.com">
+        <span class="contact-label">Email</span>
+        <span class="contact-value">1101bibihazaratungmail.com</span>
+      </a>
+      <a href="#" target="_blank" rel="noopener">
+        <span class="contact-label">LinkedIn</span>
+        <span class="contact-value">linkedin.com/in/bibihazaratun</span>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>Built by Bibi Hazaratun Nesa — HTML &amp; CSS, no framework.</p>
+</footer>
+
+<script>
+  const samples = [
+    { text: "আজকে মনটা অনেক ভালো লাগছে", emotion: "Joy" },
+    { text: "ajke mon ta kharap, kisu bhalo lagtese na", emotion: "Sadness" },
+    { text: "eta dekhe ami ekdom obak hoye gesi!", emotion: "Surprise" },
+    { text: "tumi eta kivabe korte parle, rag uthche", emotion: "Anger" },
+    { text: "কালকের রেজাল্ট নিয়ে খুব ভয় লাগছে", emotion: "Fear" }
+  ];
+
+  const emotionColors = {
+    Joy: "#2DD4BF",
+    Sadness: "#5B8DEF",
+    Surprise: "#F5C451",
+    Anger: "#FF6B5D",
+    Fear: "#B98CE0"
+  };
+
+  let i = 0;
+  const textEl = document.getElementById("signalText");
+  const emotionEl = document.getElementById("signalEmotion");
+  const tagEl = document.getElementById("signalTag");
+
+  function cycleSample() {
+    const s = samples[i % samples.length];
+    textEl.style.opacity = 0;
+    emotionEl.style.opacity = 0;
+    setTimeout(() => {
+      textEl.textContent = s.text;
+      emotionEl.textContent = s.emotion;
+      tagEl.style.setProperty("--tag-color", emotionColors[s.emotion]);
+      textEl.style.opacity = 1;
+      emotionEl.style.opacity = 1;
+    }, 250);
+    i++;
+  }
+  setInterval(cycleSample, 2800);
+
+  // ambient bars
+  const barsWrap = document.getElementById("signalBars");
+  const barCount = 24;
+  for (let b = 0; b < barCount; b++) {
+    const bar = document.createElement("span");
+    bar.style.animationDelay = (Math.random() * 2) + "s";
+    bar.style.setProperty("--h", (20 + Math.random() * 60) + "%");
+    barsWrap.appendChild(bar);
+  }
+</script>
+
+</body>
+</html>
