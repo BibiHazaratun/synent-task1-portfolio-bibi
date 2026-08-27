@@ -7,6 +7,10 @@ Single-page personal portfolio built for **Synent Technologies Web Development I
 - **About Me** — background as a CSE student and NLP researcher
 - **Skills** — grouped into NLP & ML, Web Development, and Tools & Practice
 - **Contact** — GitHub, email, and LinkedIn
+## Skills Shown
+- NLP & ML: BanglaBERT, MuRIL, XLM-RoBERTa, transformer ensembles
+- Web Development: React, Node.js, MongoDB
+- Tools: Git, Colab, Overleaf
 
 ## Tech
 - Plain **HTML5** and **CSS3** — no framework
