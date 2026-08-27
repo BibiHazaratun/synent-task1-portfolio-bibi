@@ -16,7 +16,7 @@ Single-page personal portfolio built for **Synent Technologies Web Development I
 - Respects `prefers-reduced-motion` and has visible keyboard focus states
 
 ## Live Demo
-[Add your GitHub Pages link here once deployed]
+(https://bibihazaratun.github.io/synent-task1-portfolio-bibi/)
 
 ## Author
 Bibi Hazaratun Nesa — CSE, Premier University, Chittagong
